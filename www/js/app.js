@@ -32,3 +32,16 @@ $('.acao-limpar').on('click', function() {
     $('#numero-mesa').val('');
     $('.badge').remove();
 });
+
+$('.scan-qrcode').click(function(){
+    cordova.plugins.barcodeScanner.scan(function (result){        
+        if (result.text) {
+            let mesa = parseInt(result.text);
+            Materialize.toast('Mesa ' + mesa, 2000);
+            $('#numero-mesa').val(mesa);
+        }
+    }, function(error) {
+        alert(JSON.stringify(error));
+        Materialize.toast('Erro ' + JSON.stringify(error), 2000, 'red-text');
+    });
+});

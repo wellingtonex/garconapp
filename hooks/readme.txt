@@ -9,3 +9,7 @@ cordova run android
 cordova run android --device
 
 https://github.com/sergiolopes/garconapp
+
+cordova plugin add phonegap-plugin-barcodescanner --save
+
+cordova plugin add cordova-plugin-statusbar --save
