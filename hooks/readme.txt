@@ -29,3 +29,6 @@ Também podemos listar quais URLs devem ser tratadas pelo sistema operacional, e
 https://github.com/apache/cordova-plugin-whitelist
 
 http://cozinhapp.sergiolopes.org/
+
+projeto final
+https://github.com/sergiolopes/garconapp/tree/ajax
