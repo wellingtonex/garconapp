@@ -53,12 +53,13 @@ $('.acao-finalizar').on('click', function() {
             mesa: $('#numero-mesa').val(),
             pedido: $('#resumo').text()
         },
-        error: function(erro) {
+        error: function(erro) {            
+           navigator.vibrate(1000);
            Materialize.toast(erro.responseText, 3000, 'red-text');
         },
         success: function(dados) {
+            navigator.vibrate(1000);
             Materialize.toast(dados, 2000);
-
             $('#numero-mesa').val('');
             $('.badge').remove();
         }
