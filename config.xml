@@ -21,6 +21,10 @@
     <preference name="BackgroundColor" value="0xF2F2F2FF" />
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
+
+    <!--permite acessar o dominio http://cozinhapp.sergiolopes.org atravez do plugin whitelist, já que por padrão o cordova bloqueia todos os acessos a dominios externos-->
+    <access origin="http://cozinhapp.sergiolopes.org"/>
+
     <platform name="android">
         <allow-intent href="market:*" />
         <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
