@@ -27,3 +27,5 @@ Também podemos listar quais URLs devem ser tratadas pelo sistema operacional, e
 <allow-intent href="tel:*" />
 
 https://github.com/apache/cordova-plugin-whitelist
+
+http://cozinhapp.sergiolopes.org/
